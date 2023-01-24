@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 def new_in_list(my_list, idx, element):
+    nlist = my_list[:]
     if idx < 0:
-        return my_list
+        return nlist
     elif idx > len(my_list) - 1:
-        return my_list
-    else:
-        my_list[idx] = element
+        return nlist
+    nlist[idx] = element
+    return nlist
