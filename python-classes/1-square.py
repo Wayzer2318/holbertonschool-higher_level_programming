@@ -10,3 +10,5 @@ class Square:
     """
     __init__(self, name):
         self._Square__size = name
+
+p = Square(size)
