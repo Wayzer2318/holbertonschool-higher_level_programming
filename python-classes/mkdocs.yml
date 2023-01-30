@@ -1,6 +1,0 @@
-site_name: mklorum
-site_url: https://exemple.com
-nav:
-    - Home: index.md
-    - About: about.md
-theme: readthedocs
