@@ -60,5 +60,5 @@ class Rectangle():
             for k in range(0, self.height):
                 for i in range(self.width):
                     rectangle += "#"
-                    rectangle += "\n"
+                rectangle += "\n"
             return rectangle[:-1]
