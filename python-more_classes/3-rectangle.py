@@ -58,7 +58,7 @@ class Rectangle():
         else:
             rectangle = ""
             for k in range(0, self.height):
-                for i in range(0, self.width):
+                for i in range(self.width):
                     rectangle += "#"
                     rectangle += "\n"
             return rectangle[:-1]
