@@ -4,12 +4,12 @@
 
 class Rectangle():
     """ rectangle """
-    number_of_instance = 0
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
-        Rectangle.number_of_instance += 1
+        Rectangle.number_of_instances += 1
         if type(width) is not int:
             raise TypeError('width must be an integer')
         if width < 0:
@@ -61,12 +61,12 @@ class Rectangle():
             Rectangle = ""
             for k in range(0, self.height):
                 for i in range(self.width):
-                    rectangle += "#"
-                rectangle += "\n"
-            return rectangle[:-1]
+                    Rectangle += "#"
+                Rectangle += "\n"
+            return Rectangle[:-1]
 
     def __repr__(self):
         return "Rectangle(2, 4)"
     def __del__(self):
-        Rectangle.number_of_instance -= 1
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
