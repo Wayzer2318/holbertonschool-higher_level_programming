@@ -3,5 +3,5 @@
 
 
 def lookup(obj):
-   """ atribute of object"""
+    """ atribute of object """
     return dir(obj)
