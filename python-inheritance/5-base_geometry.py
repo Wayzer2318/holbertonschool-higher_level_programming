@@ -2,5 +2,6 @@
 """ geometry """
 
 
-class BaseGeometry(self):
+class BaseGeometry:
+    """ geometry """
     pass
