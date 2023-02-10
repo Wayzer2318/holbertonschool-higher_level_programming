@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" kin of class """
+""" kind of class """
 
 
 def is_kind_of_class(obj, a_class):
