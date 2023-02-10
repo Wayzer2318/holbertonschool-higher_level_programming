@@ -3,5 +3,5 @@
 
 
 def is_kind_of_class(obj, a_class):
-    """ kind of class"""
+    """ kind of class """
     if isinstance(obj, a_class)
