@@ -27,7 +27,8 @@ class Rectangle(Base):
         print(Rectangle, end="")
 
     def __str__(self):
-        return("{}".format("[Rectangle]")
+        """ str """
+        return ("{}".format("[Rectangle]"))
 
     @property
     def width(self):
