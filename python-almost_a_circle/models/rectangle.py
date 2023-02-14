@@ -19,12 +19,10 @@ class Rectangle(Base):
 
     def display(self):
         """ display """
-        r = ""
         for i in range(0, self.height):
             for y in range(self.width):
-                r += "#"
-            r += "\n"
-        return r
+                print("#")
+            print("\n")
 
     @property
     def width(self):
