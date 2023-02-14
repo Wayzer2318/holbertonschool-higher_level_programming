@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-from models.base import Base
-
 """ rectangle """
+from models.base import Base
 
 
 class Rectangle(Base):
-    """ rectangle """
+    """ Rectangle inherits from base """
 
     def __init__(self, width, height, x=0, y=0, id=None):
         self.__width = width
@@ -16,7 +15,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """The width property."""
+        """ The width property."""
         return self._width
 
     @width.setter
@@ -29,7 +28,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """The height property."""
+        """ The height property."""
         return self.__height
 
     @height.setter
