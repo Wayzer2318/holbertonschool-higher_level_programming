@@ -26,6 +26,9 @@ class Rectangle(Base):
             Rectangle += "\n"
         print(Rectangle, end="")
 
+    def __str__(self):
+        return("{}".format("[Rectangle]")
+
     @property
     def width(self):
         """ The width property. """
