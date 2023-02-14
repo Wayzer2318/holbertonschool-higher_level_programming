@@ -19,8 +19,8 @@ class Rectangle(Base):
 
     def display(self):
         """ display """
-        for i in range(0, self.height):
-            for y in range(0, self.width):
+        for i in range(0, self.width):
+            for y in range(0, self.height):
                 print("#", end="")
 
     @property
