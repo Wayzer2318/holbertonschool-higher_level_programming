@@ -17,6 +17,12 @@ class Rectangle(Base):
         """ area """
         return self.width * self.height
 
+    def display(self):
+    """ display """
+        for i in self.height:
+            for y in self.width:
+                print("#", end="")
+
     @property
     def width(self):
         """ The width property. """
