@@ -21,7 +21,7 @@ class Rectangle(Base):
         """ display """
         for i in range(0, self.height):
             for y in range(self.width):
-                print("#")
+                print("#", end='')
             print("\n")
 
     @property
