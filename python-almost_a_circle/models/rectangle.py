@@ -24,7 +24,7 @@ class Rectangle(Base):
             for y in range(self.width):
                 r += "#"
             r += "\n"
-        return r[:-1]
+        return r
 
     @property
     def width(self):
