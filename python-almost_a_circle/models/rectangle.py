@@ -7,8 +7,8 @@ class Rectangle(Base):
     """ Rectangle inherits from base """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         self.x = x
         self.y = y
         super().__init__(id)
@@ -16,11 +16,11 @@ class Rectangle(Base):
     @property
     def width(self):
         """ The width property."""
-        return self._width
+        return self.__width
 
     @width.setter
     def width(self, value):
-        self._width = value
+        self.__width = value
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -33,7 +33,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        self._height = value
+        self.__height = value
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value <= 0:
