@@ -22,7 +22,6 @@ class Rectangle(Base):
         for i in range(0, self.height):
             for y in range(self.width):
                 print("#", end='')
-            print("\n")
 
     @property
     def width(self):
