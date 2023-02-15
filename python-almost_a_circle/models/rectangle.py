@@ -18,6 +18,7 @@ class Rectangle(Base):
         return self.width * self.height
 
     def update(self, *args):
+        """ update """
         extracted = [*args]
         if len(extracted) <= 0:
             return
