@@ -17,7 +17,7 @@ class Rectangle(Base):
         """ area """
         return self.width * self.height
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ update """
         if args:
             for i in range(len(args)):
@@ -31,6 +31,9 @@ class Rectangle(Base):
                     self.x = args[i]
                 if i == 4:
                     self.y = args[i]
+        else:
+            for key, value in kwargs.item():
+                sctattr(self, key, value)
 
     def display(self):
         """ display """
