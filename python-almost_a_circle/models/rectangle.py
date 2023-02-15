@@ -17,6 +17,21 @@ class Rectangle(Base):
         """ area """
         return self.width * self.height
 
+    def update(self, *args):
+        extracted = [*args]
+        if len(extracted) <= 0:
+            return
+        if len(extracted) in range(1):
+            self.id = extracted[0]
+        if len(extracted) in range(1, 2):
+            self.width = extracted[1]
+        if len(extracted) in range(1, 3):
+            self.height = extracted[2]
+        if len(extracted) in range(1, 4):
+            self.x = extracted[3]
+        if len(extracted) in range(1, 5):
+            self.y = extracted[4]
+
     def display(self):
         """ display """
         Rectangle = ""
