@@ -20,13 +20,24 @@ class Rectangle(Base):
     def display(self):
         """ display """
         Rectangle = ""
-        for s in range(self.y):
-            print("\n")
-        for i in range(0, self.height):
-            for y in range(self.width):
-                Rectangle += "#"
+        if self.y != 0:
+            for s in range(self.y):
+                print("\n", end='')
+        if self.x != 0:
+            q = ""
+            for t in range(self.x):
+                q += " "
+            for i in range(0, self.height):
+                for y in range(self.width):
+                    Rectangle += "#"
             Rectangle += "\n"
-        print(Rectangle, end="")
+            print(q, Rectangle, end="")
+        else:
+            for i in range(0, self.height):
+                for y in range(self.width):
+                    Rectangle += "#"
+                Rectangle += "\n"
+            print(Rectangle, end="")
 
     def __str__(self):
         """ str """
