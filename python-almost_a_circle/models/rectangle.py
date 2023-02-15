@@ -28,8 +28,9 @@ class Rectangle(Base):
             for t in range(self.x):
                 q += " "
             for i in range(0, self.height):
+                Rectangle += str(q)
                 for y in range(self.width):
-                    Rectangle += (str(q) + "#")
+                    Rectangle += ("#")
                 Rectangle += "\n"
             print(Rectangle, end="")
         else:
