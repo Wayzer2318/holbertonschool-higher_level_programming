@@ -32,7 +32,7 @@ class Rectangle(Base):
                 if i == 4:
                     self.y = args[i]
         else:
-            for key, value in kwargs.item():
+            for key, value in kwargs.items():
                 setattr(self, key, value)
 
     def display(self):
