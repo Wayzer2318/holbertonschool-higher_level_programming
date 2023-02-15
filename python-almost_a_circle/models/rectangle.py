@@ -19,19 +19,18 @@ class Rectangle(Base):
 
     def update(self, *args):
         """ update """
-        extracted = [*args]
-        if len(extracted) <= 0:
-            return
-        if len(extracted) in range(1):
-            self.id = int(extracted[0])
-        if len(extracted) in range(1, 2):
-            self.width = extracted[1]
-        if len(extracted) in range(1, 3):
-            self.height = extracted[2]
-        if len(extracted) in range(1, 4):
-            self.x = extracted[3]
-        if len(extracted) in range(1, 5):
-            self.y = extracted[4]
+        if args:
+            for i in range(len(i)):
+                if i == 0:
+                    self.id = args[i]
+                if i == 1:
+                    self.width = args[i]
+                if i == 2:
+                    self.height = args[i]
+                if i == 3:
+                    self.x = args[i]
+                if i == 4:
+                    self.y = args[i]
 
     def display(self):
         """ display """
