@@ -20,7 +20,7 @@ class Rectangle(Base):
     def display(self):
         """ display """
         Rectangle = ""
-        for s in range(self.x):
+        for s in range(self.y):
             print("\n")
         for i in range(0, self.height):
             for y in range(self.width):
