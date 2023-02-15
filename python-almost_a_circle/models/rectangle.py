@@ -20,7 +20,7 @@ class Rectangle(Base):
     def update(self, *args):
         """ update """
         if args:
-            for i in range(len(i)):
+            for i in range(len(args)):
                 if i == 0:
                     self.id = args[i]
                 if i == 1:
