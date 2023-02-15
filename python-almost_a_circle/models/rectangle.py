@@ -23,7 +23,7 @@ class Rectangle(Base):
         if len(extracted) <= 0:
             return
         if len(extracted) in range(1):
-            self.id = extracted[0]
+            self.id = int(extracted[0])
         if len(extracted) in range(1, 2):
             self.width = extracted[1]
         if len(extracted) in range(1, 3):
