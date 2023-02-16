@@ -22,7 +22,7 @@ class Square(Rectangle):
     def __str__(self):
         """ str """
         ident = self.id
-        size = self.height
+        size = self.width
         x = self.x
         y = self.y
 
