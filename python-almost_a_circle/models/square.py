@@ -28,7 +28,7 @@ class Square(Rectangle):
 
         return f"[Square] ({identifier}) {x}/{y} - {size}"
 
-     def update(self, *args, **kwargs):
+    def update(self, *args, **kwargs):
         """ update """
         if args:
             for arg in range(len(args)):
