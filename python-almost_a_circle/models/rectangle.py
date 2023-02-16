@@ -58,6 +58,15 @@ class Rectangle(Base):
                 Rectangle += "\n"
             print(Rectangle, end="")
 
+    def to_dictionary(self):
+        """ dictionary """
+        dictionary = {
+            'id': self.id,
+            'size': self.size,
+            'x': self.x,
+            'y': self.y}
+        return (dictionary)
+
     def __str__(self):
         """ str """
         str = ("[Rectangle] (%s) %s/%s - %s/%s" %
@@ -119,12 +128,3 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
-
-    def to_dictionary(self):
-        """ dictionary """
-        dictionary = {
-            'id': self.id,
-            'size': self.size,
-            'x': self.x,
-            'y': self.y}
-        return (dictionary)
