@@ -123,7 +123,7 @@ class Rectangle(Base):
     def to_dictionary(self):
         """ to dictionary """
         dictionary = {
-           'id': self.id,
+            'id': self.id,
             'size': self.size,
             'x': self.x,
             'y': self.y}
