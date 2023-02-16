@@ -15,6 +15,7 @@ class Base:
             Base.__nb_object += 1
             self.id = Base.__nb_object
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """ to json """
         if list_dictionaries:
