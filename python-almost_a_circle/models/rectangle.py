@@ -62,7 +62,8 @@ class Rectangle(Base):
         """ dictionary """
         dictionary = {
             'id': self.id,
-            'size': self.size,
+            'width': self.width,
+            'height': self.height
             'x': self.x,
             'y': self.y}
         return (dictionary)
