@@ -119,3 +119,12 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def to_dictionary(self):
+        """ to dictionary """
+        dictionary = {
+           'id': self.id,
+            'size': self.size,
+            'x': self.x,
+            'y': self.y}
+        return (dictionary)
