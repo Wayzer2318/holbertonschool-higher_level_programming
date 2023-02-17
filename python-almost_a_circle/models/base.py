@@ -23,7 +23,7 @@ class Base:
         else:
             return ("[]")
 
-    @classmethod
+    @staticmethod
     def save_to_file(cls, list_objs):
         """ save to file """
 
