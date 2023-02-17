@@ -35,3 +35,12 @@ class Base:
                 dictionaryL = [obj.to_dictionary() for obj in list_objs]
                 jsonS = cls.to_json_string(dictionaryL)
                 f.write(jsonS)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ from json """
+
+        if json_string is None:
+            return []
+        else:
+            return json.loads(json_string)
