@@ -23,12 +23,12 @@ class Base:
         else:
             return ("[]")
 
-    @staticmethod
+    @classmethod
     def save_to_file(cls, list_objs):
         """ save to file """
 
         fileN = cls.__name__ + ".json"
-        with open(fileN, "w") as f:
+        with open(fileN, mode="w") as f:
             if list_objs is None:
                 f.write("[]")
             else:
