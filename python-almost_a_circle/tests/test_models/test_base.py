@@ -3,8 +3,6 @@
 import unittest
 from models.base import Base
 
-from io import StringIO
-
 
 class Test_Base(unittest.TestCase):
     """ unittest """
