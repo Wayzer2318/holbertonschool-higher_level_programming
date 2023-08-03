@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-""" write a script that lists all states from the database hbtn_0e_0_usa """
+""" script that lists all states from a database """
 import sys
 import MySQLdb
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
-        sys.exit("Usage: file_name, username, password, db")
+        sys.exit("Usage: script_name, username, password, db")
 
     conn = MySQLdb.connect(
         host="localhost",
